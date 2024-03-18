@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Use this command to calculate loc (windows in bash or linux)
+
+``` h
+
+find ./src -name '*.js*' | xargs wc -l
+
+```
 ## Available Scripts
 
 In the project directory, you can run:

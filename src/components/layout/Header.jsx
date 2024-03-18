@@ -21,7 +21,7 @@ const navItems = [
     },
     {
         key: 4,
-        label: <Link to="/test"> Test </Link>
+        label: <Link to="/play"> Play </Link>
     },
     {
         key: 5,

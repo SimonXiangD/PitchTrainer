@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card } from 'antd';
-import { Button } from 'antd/es/radio';
+import { Card, Progress } from 'antd';
+import { ProgressFigureOneLine } from './ProgressBar';
 const { Meta } = Card;
 
 
@@ -57,3 +57,15 @@ const RandomCard1 = () => (<CardTemp {...{ imageUrl: "https://source.unsplash.co
 const RandomCard2 = () => (<CardTemp title="Rand2" description="A random card" imageUrl="https://source.unsplash.com/random"></CardTemp>)
 export { RandomCard1, RandomCard2, DemoCard, DemoCard2 }
 export { CardTemp }
+
+
+export const ProgressCard = ({ progressCardInfo}) => {
+    return (
+        <Card  title={<span style={{textAlign: "center"}}>{progressCardInfo.name}</span>} style={{margin: 5, }} hoverable>
+            <Progress style={{minWidth: 200}} percent={progressCardInfo.rate}></Progress>
+            <ProgressFigureOneLine level={5} right={progressCardInfo.rightNum} wrong={progressCardInfo.wrongNum}></ProgressFigureOneLine>
+            {/* <p>asfasfaasf</p> */}
+        
+        </Card>
+    )
+}

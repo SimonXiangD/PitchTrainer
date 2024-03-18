@@ -1,7 +1,7 @@
 import React from 'react';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { RandomCard1, RandomCard2, DemoCard, DemoCard2 } from '../clickable/TrainCards';
-import { RandomCardListNum, TrainCardList } from '../clickable/TrainCardList';
+import { RandomCard1, RandomCard2, DemoCard, DemoCard2 } from '../uiItems/TrainCards';
+import { RandomCardListNum, TrainCardList } from '../uiItems/TrainCardList';
 
 const { Header, Content, Footer } = Layout;
 const items = new Array(15).fill(null).map((_, index) => ({
